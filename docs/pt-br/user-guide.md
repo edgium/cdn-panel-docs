@@ -7,25 +7,38 @@
   - HTTP/2 e HTTP/3
   - WebSocket
   - TLS 1.3
+  - Conexão 0-RTT
+  - HSTS (HTTP Strict Transport Security)
 
 #### 🛡️ Recursos de Segurança
 - **Gerenciamento SSL/TLS**
-  - Provisionamento de certificados
+  - Provisionamento automático Let's Encrypt
+  - Suporte a certificados personalizados
   - Renovação automática
-  - Suporte a SSL personalizado
+  - Redirecionamento HTTPS
+  - Upgrade de requisições inseguras
 - **Suite de Proteção**
+  - WAF (Web Application Firewall)
+    - Modo aprendizado
+    - Proteção contra SQL Injection
+    - Proteção contra ataques XSS
+    - Proteção contra ataques RFI
+    - Proteção contra ataques de evasão
   - Mitigação DDoS
-  - WAF (Firewall de Aplicação Web)
   - Limitação de taxa
   - Bloqueio/liberação de IPs
-  - Detecção de bots
+  - Proteção contra bad bots
+  - Proteção de Hotlink
+  - URLs de bypass
 
 #### 💾 Gerenciamento de Cache
 - **Recursos de Controle**
   - Limpeza com um clique
-  - Invalidação seletiva de cache
-  - Regras personalizadas de cache
-  - Configuração de TTL
+  - Modo desenvolvedor
+  - Tempo de expiração configurável
+  - Cache TTL personalizável
+  - Cache bypass via cookie
+  - Perfis de cache (Padrão/Sem cadeia/Ignorar cadeia)
 - **Opções Avançadas**
   - Pré-carregamento inteligente
   - Proteção de origem
@@ -33,21 +46,37 @@
 
 #### ⚡ Otimização de Performance
 - **Otimização de Recursos**
-  - Compressão de imagens e conversão WebP
-  - Minificação de JavaScript/CSS
-  - Otimização de HTML
+  - Compressão de arquivos
+  - Max Upload configurável
+  - Age Header
+  - X-Real-IP
 - **Compressão**
   - Brotli
   - Gzip
   - Compressão em tempo real
 
+#### 🌐 Gerenciamento de Upstream
+- **Configurações**
+  - Múltiplos upstreams por site
+  - Suporte a HTTPS para upstream
+  - Priorização de servidores
+  - Balanceamento de carga
+  - Monitoramento de status
+
 #### 📊 Analytics e Monitoramento
 - **Métricas em Tempo Real**
-  - Monitoramento de tráfego
-  - Uso de banda
-  - Performance de cache
+  - Integração com Google Analytics
+  - Remote Syslog
+  - Geolocalização
   - Rastreamento de erros
 - **Insights Geográficos**
   - Distribuição de tráfego
   - Localização dos usuários
   - Performance por região
+
+#### ⚙️ Configurações Gerais
+- **Gerenciamento de Domínios**
+  - Configuração de subdomínios
+  - Suporte a IPv4 e IPv6
+  - Recomendações automáticas de CDN
+  - Gerenciamento de planos
